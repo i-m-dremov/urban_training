@@ -1,0 +1,17 @@
+print('"Работа со словарями"','-' * 120, sep = '\n')
+my_dict = {'Father': 1958, 'Mother': 1959, 'Sister': 1983}
+print(my_dict)
+print(my_dict['Father'])
+print(my_dict.get('BroTHer', 'Нет такой записи'))
+my_dict.update({'Brother': 1987, 'Uncle': 1953})
+x = my_dict.pop('Sister')
+print(x)
+print(my_dict)
+print('-' * 120, '', '', sep = '\n')
+print('"Работа с множествами"', '-' * 120, sep = '\n')
+my_set = {15, 12, 4, 'word', 12, 'word'}
+print(my_set)
+my_set.update({23.4, True, (1, 2)})
+my_set.discard('word')
+print(my_set)
+print('-' * 120)

@@ -10,10 +10,8 @@ def is_prime(func):
             print('Не относится ни к простым числам ни к составным')
         for i in range(2, int(number ** 0.5) + 1):
             if number % i != 0:
-                print('Простое')
-            else:
-                print('Составное')
-            return number
+                return f'Простое\n{number}'
+        return f'Составное\n{number}'
     return wrapper
 
 @is_prime

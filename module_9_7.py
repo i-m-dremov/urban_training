@@ -6,7 +6,7 @@
 def is_prime(func):
     def wrapper(*args):
         number = func(*args)
-        if number < 1:
+        if number <= 1:
             print('Не относится ни к простым числам ни к составным')
         for i in range(2, int(number ** 0.5) + 1):
             if number % i != 0:
